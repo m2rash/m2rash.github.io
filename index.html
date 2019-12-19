@@ -10,7 +10,7 @@
 
     <title>LunchFinder</title>
   </head>
-  <body>
+  <body onload="getLocation()">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">LunchFinder</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,9 +66,12 @@
             <div class="card-footer">
               <button onclick="open_OxOst_daily()" type="button" class="btn btn-secondary">Daily Menu</button>
               <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>                            
-                        
+              
             </div>
           </div>
+          
+          <div>Your Location:</div>
+          <p id="demo"></p>
       </div>
 
 
