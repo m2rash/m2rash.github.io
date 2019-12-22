@@ -11,57 +11,38 @@ function open_OxOst_daily()
 
 
 
-    var x = document.getElementById("demo");
+    var x = document.getElementById("dis");
 
     function getLocation() {
       if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(calcCrow);
       } else { 
         x.innerHTML = "Geolocation is not supported by this browser.";
       }
     }
 
-    function showPosition(position) {
-      x.innerHTML = "Latitude: " + position.coords.latitude + 
-      "<br>Longitude: " + position.coords.longitude;
-    }
-
-
-
-
-
-var x = document.getElementById("demo");
-function getLocation() {
-    if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-
-function distance(lon1, lat1, lon2, lat2) {
-    var R = 6371; // Radius of the earth in km
-    var dLat = (lat2-lat1).toRad();  // Javascript functions in radians
-    var dLon = (lon2-lon1).toRad(); 
+  //This function takes in latitude and longitude of two location and returns the distance between them as the crow flies (in km)
+  function calcCrow(position) 
+  {
+    
+    var R = 6371; // km
+    var dLat = toRad(49.0094941-position.coords.latitude);
+    var dLon = toRad(8.4200555-position.coords.longitude);
+    var lat1 = toRad(position.coords.latitude);
+    var lat2 = toRad(49.0094941);
+    
     var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-            Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) * 
-            Math.sin(dLon/2) * Math.sin(dLon/2); 
+    Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-    var d = R * c; // Distance in km
+    var d = R * c;
+    
+    x.innerHTML = d.toFixed(2) + " km";
     return d;
   }
+
   
-  /** Converts numeric degrees to radians */
-  if (typeof(Number.prototype.toRad) === "undefined") {
-    Number.prototype.toRad = function() {
-      return this * Math.PI / 180;
+    // Converts numeric degrees to radians
+    function toRad(Value) 
+    {
+        return Value * Math.PI / 180;
     }
-  }
-  
-  window.navigator.geolocation.getCurrentPosition(function(pos) {
-    console.log(pos); 
-    console.log(
-      distance(pos.coords.longitude, pos.coords.latitude, 42.37, 71.03)
-    ); 
-  });
