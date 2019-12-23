@@ -1,10 +1,17 @@
-    var distances = [MensaDis, OxOstDis];
-    var positions = [49.0118492, 8.4148235, 49.009339, 8.421732];
+
+    //Order has to be the same as in index.html!!!!!!!
+    var distances = [MensaDis, OxOstDis, OxCafeDis, OxPubDis, OxCharlesDis];
+    var positions =  [49.0118492, 8.4148235, 
+                      49.009339, 8.421732,
+                      49.009126, 8.4095924,
+                      49.0086067, 8.4107285,
+                      49.0103096, 8.3955915];
+
     
     
     function init() {
       getLocation();
-      sortList();
+      //sortList();
     }
     
     
@@ -16,18 +23,15 @@
       }
     }
 
-    function savePos(position) {
-      aktLat = position.coords.latitude;
-      aktLon = position.coords.longitude;
-    }
 
 
 
 
   //This function takes in latitude and longitude of two location and returns the distance between them as the crow flies (in km)
   function calcDistances(position) {
-    aktLat = position.coords.latitude;
-    aktLon = position.coords.longitude;
+    var aktLat = position.coords.latitude;
+    var aktLon = position.coords.longitude;
+    var disForCalc = [];
 
     for (i = 0; i < distances.length; i++) {
       var R = 6371; // km
@@ -41,8 +45,11 @@
       var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
       var d = R * c;
       
+      disForCalc.push(d);
       distances[i].innerHTML = d.toFixed(2) + " km";
     }
+
+    sortList(disForCalc)
   }
     // Converts numeric degrees to radians
   function toRad(Value) {
@@ -53,7 +60,7 @@
 
 
 
-    function sortList() {
+    function sortList(disForCalc) {
       var list, i, switching, b, bSort, shouldSwitch;
       list = document.getElementById("LocationList");
       switching = true;
@@ -71,7 +78,7 @@
           /* check if the next item should
           switch place with the current item: */
           
-          if (bSort[i].innerHTML.toLowerCase() > bSort[i + 1].innerHTML.toLowerCase()) {
+          if (disForCalc[i] > disForCalc[i + 1]) {
             /* if next item is numerically
             lower than current item, mark as a switch
             and break the loop: */
@@ -83,6 +90,9 @@
           /* If a switch has been marked, make the switch
           and mark the switch as done: */
           b[i].parentNode.insertBefore(b[i + 1], b[i]);
+          var x = disForCalc[i];
+          disForCalc[i] = disForCalc[i+1];
+          disForCalc[i + 1] = x;
           switching = true;
         }
       }
