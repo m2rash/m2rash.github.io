@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
     <title>LunchFinder</title>
   </head>
@@ -48,97 +46,128 @@
             </nav>
 
 
+      <div class="container" >
+        <ul class="card-columns" id = "LocationList">
 
+          <li class="card">
+            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseMensa"">
+              <h5 class="card-title">Mensa <i class="float-right text-danger" id="MensaDis"></i></h5> 
+            </a>
 
+            <a class="collapse card-body" id="collapseMensa" role="button" data-toggle="collapse" href="#collapseMensa">
+              <p >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button onclick="open_Mensa_site()"type="button" class="btn btn-primary btn-lg btn-block mt-2">Show Menu</button>
+            </a> 
+          </li>
+          <li class="card">
+            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" style="max-height: 200px;">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxOst"">
+              <h5 class="card-title">Oxford Ost <i class="float-right text-danger" id="OxOstDis"></i></h5> 
+            </a>
 
+            <div class="collapse" id="collapseOxOst">
 
+              <button onclick="open_Mensa_site()"type="button" class="btn btn-primary btn-lg btn-block mt-2">Show Menu</button>
+              
+            </div> 
+          </li>
+          <li class="card">
+            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" style="max-height: 200px;">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxCafe"">
+              <h5 class="card-title">Oxford Cafe <i class="float-right text-danger" id="OxCafeDis"></i></h5> 
+            </a>
 
-      <div class="container pt-3" id = "Nearest">
+            <div class="collapse" id="collapseOxCafe">
+
+              <button onclick="open_Mensa_site()"type="button" class="btn btn-primary btn-lg btn-block mt-2">Show Menu</button>
+              
+            </div> 
+          </li>
             
-
-        <div class="card text-white bg-secondary mb-3" style="max-width: 80rem;max-height: 300rem;">
+          <!--<li class="card text-white bg-secondary mb-3" style="max-width: 80rem;max-height: 300rem;">
             <a href="http://www.oxford-ost.de/?lang=de#" class="card text-white bg-secondary">
-              <div class="card-header"><h3>Oxford Ost<div class="float-right font-italic small text-danger"> <p id="dis4"></p> </div></h3></div>
+              <div class="card-header"><h3>Mensa<div class="float-right font-italic small text-danger"> <b id="MensaDis"></b> </div></h3></div>
+            </a>
+            <a href="http://www.oxford-ost.de/?lang=de#" >
+              <img  class="card-img-top" src="images/KITMensa.png" alt="Card image" style="max-width: 100rem;">
+            </a>
+            <div class="card-footer">
+              <button onclick="sortList()" type="button" class="btn btn-secondary">Show Menu</button>
+              <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>                            
+              
+            </div>
+          </li>
+
+
+
+          <li class="card text-white bg-secondary mb-3" style="max-width: 80rem;max-height: 300rem;">
+            <a href="http://www.oxford-ost.de/?lang=de#" class="card text-white bg-secondary">
+              <div class="card-header"><h3>Oxford Ost<div class="float-right font-italic small text-danger"> <b id="OxOstDis"></b> </div></h3></div>
             </a>
             <a href="http://www.oxford-ost.de/?lang=de#" >
               <img  class="card-img-top" src="images/OxOst.jpg" alt="Card image" style="max-width: 100rem;">
             </a>
             <div class="card-footer">
-              <button onclick="sortList()" type="button" class="btn btn-secondary">Daily Menu</button>
+              <button onclick="sortList()" type="button" class="btn btn-secondary">Show Menu</button>
               <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>                            
               
             </div>
-          </div>
-      </div>
-
-
-
-      <div class="container" >
-        <ul class="list-group list-group-flush" id = "LocationList">
-          
-          <li class="list-group-item list-group-item-action"  data-toggle="collapse" data-target="#collapseMensa" aria-expanded="false" aria-controls="collapseExample">
-            Mensa    <div class="float-right"><p id="MensaDis"></p></div>
-            <div class="collapse" id="collapseMensa">
-              
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div> 
-          </li>
-          
-          
-          
-          <li class="list-group-item list-group-item-action"  data-toggle="collapse" data-target="#collapseOxOst" aria-expanded="false" aria-controls="collapseExample">
-            Oxford Ost     <div class="float-right"><p id="OxOstDis"></p></div>
-            <div class="collapse" id="collapseOxOst">
-              
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>
-            </div> 
           </li>
 
 
 
-          <li class="list-group-item list-group-item-action"  data-toggle="collapse" data-target="#collapseOxCafe" aria-expanded="false" aria-controls="collapseExample">
-            Oxford Cafe     <div class="float-right"><p id="OxCafeDis"></p></div>
-            <div class="collapse" id="collapseOxCafe">
+          <li class="card text-white bg-secondary mb-3" style="max-width: 80rem;max-height: 300rem;">
+            <a href="http://www.oxford-ost.de/?lang=de#" class="card text-white bg-secondary">
+              <div class="card-header"><h3>Oxford Cafe<div class="float-right font-italic small text-danger"> <b id="OxCafeDis"></b> </div></h3></div>
+            </a>
+            <a href="http://www.oxford-ost.de/?lang=de#" >
+              <img  class="card-img-top" src="images/OxCafe.jpg" alt="Card image" style="max-width: 100rem;">
+            </a>
+            <div class="card-footer">
+              <button onclick="sortList()" type="button" class="btn btn-secondary">Show Menu</button>
+              <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>                            
               
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>
-            </div> 
+            </div>
           </li>
 
 
 
-          <li class="list-group-item list-group-item-action"  data-toggle="collapse" data-target="#collapseOxPub" aria-expanded="false" aria-controls="collapseExample">
-            Oxford Pub     <div class="float-right"><p id="OxPubDis"></p></div>
-            <div class="collapse" id="collapseOxPub">
+          <li class="card text-white bg-secondary mb-3" style="max-width: 80rem;max-height: 300rem;">
+            <a href="http://www.oxford-ost.de/?lang=de#" class="card text-white bg-secondary">
+              <div class="card-header"><h3>Oxford Pub<div class="float-right font-italic small text-danger"> <b id="OxPubDis"></b> </div></h3></div>
+            </a>
+            <a href="http://www.oxford-ost.de/?lang=de#" >
+              <img  class="card-img-top" src="images/OxOst.jpg" alt="Card image" style="max-width: 100rem;">
+            </a>
+            <div class="card-footer">
+              <button onclick="sortList()" type="button" class="btn btn-secondary">Show Menu</button>
+              <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>                            
               
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>
-            </div> 
+            </div>
           </li>
 
 
 
-          <li class="list-group-item list-group-item-action"  data-toggle="collapse" data-target="#collapseOxCharles" aria-expanded="false" aria-controls="collapseExample">
-            Charles Oxford     <div class="float-right"><p id="OxCharlesDis"></p></div>
-            <div class="collapse" id="collapseOxCharles">
+          <li class="card text-white bg-secondary mb-3" style="max-width: 80rem;max-height: 300rem;">
+            <a href="http://www.oxford-ost.de/?lang=de#" class="card text-white bg-secondary">
+              <div class="card-header"><h3>Charles Oxford<div class="float-right font-italic small text-danger"> <b id="OxCharlesDis"></b> </div></h3></div>
+            </a>
+            <a href="http://www.oxford-ost.de/?lang=de#" >
+              <img  class="card-img-top" src="images/OxOst.jpg" alt="Card image" style="max-width: 100rem;">
+            </a>
+            <div class="card-footer">
+              <button onclick="sortList()" type="button" class="btn btn-secondary">Show Menu</button>
+              <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>                            
               
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              <button onclick="open_OxOst_location()" type="button" class="btn btn-success float-right">Show on Maps</button>
-            </div> 
-          </li>
-
-
-
-
-
-
-        
-        
-
-
+            </div>
+          </li>-->
 
           
+
+
+
+
         </ul>
       </div>
 
@@ -147,6 +176,7 @@
 
 
       <script src="js/Nav.js"> </script>
+      <script src="js/Websites.js"> </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -1,6 +1,6 @@
 
     //Order has to be the same as in index.html!!!!!!!
-    var distances = [MensaDis, OxOstDis, OxCafeDis, OxPubDis, OxCharlesDis];
+    var distances = [MensaDis, OxOstDis, OxCafeDis];//, OxPubDis, OxCharlesDis];
     var positions =  [49.0118492, 8.4148235, 
                       49.009339, 8.421732,
                       49.009126, 8.4095924,
@@ -70,7 +70,7 @@
         // start by saying: no switching is done:
         switching = false;
         b = list.getElementsByTagName("LI");
-        bSort = list.getElementsByTagName("P");
+        bSort = list.getElementsByTagName("B");
         // Loop through all list-items:
         for (i = 0; i < (b.length - 1); i++) {
           // start by saying there should be no switching:
@@ -97,27 +97,3 @@
         }
       }
     }
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    function open_OxOst_location()
-    {
-        location.href = "https://www.google.com/maps/place/Oxford+OST/@49.0093355,8.4239207,15z/data=!4m5!3m4!1s0x0:0x9b3b4995f5ef0d72!8m2!3d49.0093355!4d8.4239207";
-    } 
-function open_OxOst_daily()
-    {
-        location.href = "https://cdn.website.dish.co/media/34/ae/1745471/Oxford-East-Ost-Food-2-8-01.pdf";
-    } 
