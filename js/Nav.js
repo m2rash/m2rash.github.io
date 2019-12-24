@@ -1,6 +1,6 @@
 
     //Order has to be the same as in index.html!!!!!!!
-    var distances = [MensaDis, OxOstDis, OxCafeDis];//, OxPubDis, OxCharlesDis];
+    var distances = [MensaDis, OxOstDis, OxCafeDis, OxPubDis, OxCharlesDis];
     var positions =  [49.0118492, 8.4148235, 
                       49.009339, 8.421732,
                       49.009126, 8.4095924,
