@@ -16,9 +16,6 @@ background-color: transparent;
 }
 
 
-
-
-
 .card-columns .card {
     margin-bottom: 0.75rem;
   }
@@ -71,4 +68,11 @@ background-color: transparent;
       display: inline-block;
       width: 100%;
     }
+  }
+
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
   }

@@ -52,31 +52,73 @@
 
 
 
-      <div class="container" >
+      <div class="container pt-3">
         <div class="card-columns" id = "LocationList">
-
-          <li class="card">
+          
+          <li class="card bg-danger">
             <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap">
             <a class="card-body" role="button" data-toggle="collapse" href="#collapseMensa"">
               <h5 class="card-title">Mensa <i class="float-right text-danger" id="MensaDis"></i></h5> 
             </a>
 
-            <a class="collapse card-body" id="collapseMensa" role="button" data-toggle="collapse" href="#collapseMensa">
-              <p >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <button onclick="open_Mensa_site()"type="button" class="btn btn-primary btn-lg btn-block mt-2">Show Menu</button>
+            <a class="collapse card-body text-center" id="collapseMensa" role="button" data-toggle="collapse" href="#collapseMensa">
+              <p id="OxOst_Daily_1">
+                <b>
+                  SPAGHETTI <br>
+                </b>
+                  mit eingelegten Tomaten, Rucola
+                  & frisch geriebenem Parmesan
+              </p>
+              <p id="OxOst_Daily_2">
+                <b>
+                  LEICHTE SPÄTZLE <br>
+                </b>
+                  Käse-Gemüse Spätzle
+                  an Beilagensalat
+              </p>
+              <p id="OxOst_Daily_3">
+                <b>
+                  DER ELSÄSSER <br>
+                </b>
+                  180 g Beef Burger mit Flammkuchen Creme,
+                  Rucola & Speck dazu Pommes
+
+              </p>              
+              <button onclick="open_Mensa_site()" type="button" class="btn btn-dark btn-lg btn-block mt-2">Show Menu</button>
             </a> 
           </li>
-          <li class="card">
-            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" style="max-height: 200px;">
+          <li class="card bg-info">
+            <img class="card-img-top" src="LocationSites/Oxfords/OxfordOst/images/OxOst_4.jpg" alt="Card image cap" style="max-height: 200px;">
             <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxOst"">
               <h5 class="card-title">Oxford Ost <i class="float-right text-danger" id="OxOstDis"></i></h5> 
             </a>
 
-            <div class="collapse" id="collapseOxOst">
+            <a class="collapse card-body text-center" id="collapseOxOst" role="button" data-toggle="collapse" href="#collapseOxOst">
+              <p id="OxOst_Daily_1">
+                <b>
+                  SPAGHETTI <br>
+                </b>
+                  mit eingelegten Tomaten, Rucola
+                  & frisch geriebenem Parmesan
+              </p>
+              <p id="OxOst_Daily_2">
+                <b>
+                  LEICHTE SPÄTZLE <br>
+                </b>
+                  Käse-Gemüse Spätzle
+                  an Beilagensalat
+              </p>
+              <p id="OxOst_Daily_3">
+                <b>
+                  DER ELSÄSSER <br>
+                </b>
+                  180 g Beef Burger mit Flammkuchen Creme,
+                  Rucola & Speck dazu Pommes
 
-              <button onclick="open_Mensa_site()"type="button" class="btn btn-primary btn-lg btn-block mt-2">Show Menu</button>
-              
-            </div> 
+              </p>              
+              <button onclick="open_OxOst_site()" type="button" class="btn btn-dark btn-lg btn-block mt-2">Show Menu</button>
+            </a> 
+            </a> 
           </li>
           <li class="card">
             <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" style="max-height: 200px;">
