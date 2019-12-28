@@ -76,3 +76,16 @@ background-color: transparent;
     min-height: 1px;
     padding: 1.25rem;
   }
+
+
+  .distanceColor {
+    color: #DD2C00 !important;
+  }
+
+  .bg-OxFord {
+    background-color: #03A9F4 !important;
+  }
+  
+  .bg-Mensa {
+    background-color: #4CAF50 !important;
+  }

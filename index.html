@@ -55,13 +55,17 @@
       <div class="container pt-3">
         <div class="card-columns" id = "LocationList">
           
-          <li class="card bg-danger">
-            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap">
-            <a class="card-body" role="button" data-toggle="collapse" href="#collapseMensa"">
-              <h5 class="card-title">Mensa <i class="float-right text-danger" id="MensaDis"></i></h5> 
+
+<!-- Mensen -->
+
+
+          <li class="card bg-Mensa">
+            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseMensaAdenauer">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseMensaAdenauer">
+              <h5 class="card-title">Mensa (Adenauer-Ring)<i class="float-right distanceColor" id="MensaAdenauerDis"></i></h5> 
             </a>
 
-            <a class="collapse card-body text-center" id="collapseMensa" role="button" data-toggle="collapse" href="#collapseMensa">
+            <a class="collapse card-body text-center" id="collapseMensaAdenauer" role="button" data-toggle="collapse" href="#collapseMensaAdenauer">
               <p id="OxOst_Daily_1">
                 <b>
                   SPAGHETTI <br>
@@ -87,10 +91,51 @@
               <button onclick="open_Mensa_site()" type="button" class="btn btn-dark btn-lg btn-block mt-2">Show Menu</button>
             </a> 
           </li>
-          <li class="card bg-info">
-            <img class="card-img-top" src="LocationSites/Oxfords/OxfordOst/images/OxOst_4.jpg" alt="Card image cap" style="max-height: 200px;">
-            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxOst"">
-              <h5 class="card-title">Oxford Ost <i class="float-right text-danger" id="OxOstDis"></i></h5> 
+          
+          
+          
+          <li class="card bg-Mensa">
+            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseMensaMoltke">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseMensaMoltke">
+              <h5 class="card-title">Mensa (Moltkestr.)<i class="float-right distanceColor" id="MensaMoltkeDis"></i></h5> 
+            </a>
+
+            <a class="collapse card-body text-center" id="collapseMensaMoltke" role="button" data-toggle="collapse" href="#collapseMensaMoltke">
+              <p id="OxOst_Daily_1">
+                <b>
+                  SPAGHETTI <br>
+                </b>
+                  mit eingelegten Tomaten, Rucola
+                  & frisch geriebenem Parmesan
+              </p>
+              <p id="OxOst_Daily_2">
+                <b>
+                  LEICHTE SPÄTZLE <br>
+                </b>
+                  Käse-Gemüse Spätzle
+                  an Beilagensalat
+              </p>
+              <p id="OxOst_Daily_3">
+                <b>
+                  DER ELSÄSSER <br>
+                </b>
+                  180 g Beef Burger mit Flammkuchen Creme,
+                  Rucola & Speck dazu Pommes
+
+              </p>              
+              <button onclick="open_Mensa_site()" type="button" class="btn btn-dark btn-lg btn-block mt-2">Show Menu</button>
+            </a> 
+          </li>
+
+
+
+<!-- OXfords -->
+
+
+          <li class="card bg-OxFord">
+            <img class="card-img-top" src="LocationSites/Oxfords/OxfordOst/images/OxOst_4.jpg" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxOst">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxOst">
+              <h5 class="card-title">Oxford Ost <i class="float-right distanceColor" id="OxOstDis"></i></h5> 
             </a>
 
             <a class="collapse card-body text-center" id="collapseOxOst" role="button" data-toggle="collapse" href="#collapseOxOst">
@@ -120,10 +165,10 @@
             </a> 
             </a> 
           </li>
-          <li class="card">
-            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" style="max-height: 200px;">
-            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxCafe"">
-              <h5 class="card-title">Oxford Cafe <i class="float-right text-danger" id="OxCafeDis"></i></h5> 
+          <li class="card  bg-OxFord">
+            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxCafe">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxCafe">
+              <h5 class="card-title">Oxford Cafe <i class="float-right distanceColor" id="OxCafeDis"></i></h5> 
             </a>
 
             <div class="collapse" id="collapseOxCafe">
@@ -133,9 +178,9 @@
             </div> 
           </li>
 
-          <li class="card">
-            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" style="max-height: 200px;">
-            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxPub"">
+          <li class="card bg-OxFord">
+            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxPub">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxPub">
               <h5 class="card-title">Oxford Pub <i class="float-right text-danger" id="OxPubDis"></i></h5> 
             </a>
 
@@ -145,9 +190,9 @@
               
             </div> 
           </li>
-          <li class="card">
-            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" style="max-height: 200px;">
-            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxCharles"">
+          <li class="card bg-OxFord">
+            <img class="card-img-top" src="images/KITMensa.png" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxCharles">
+            <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxCharles">
               <h5 class="card-title">Charles Oxford <i class="float-right text-danger" id="OxCharlesDis"></i></h5> 
             </a>
 
