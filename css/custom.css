@@ -45,8 +45,9 @@ background-color: transparent;
       -webkit-column-gap: 1.25rem;
       -moz-column-gap: 1.25rem;
       column-gap: 1.25rem;
-      orphans: 1;
-      widows: 1;
+      /*next params has to be the half the number of cards*/
+      orphans: 3;
+      widows: 3;
     }
     .card-columns .card {
       display: inline-flex;
@@ -61,8 +62,9 @@ background-color: transparent;
       -webkit-column-gap: 1.25rem;
       -moz-column-gap: 1.25rem;
       column-gap: 1.25rem;
-      orphans: 1;
-      widows: 1;
+      orphans: 2;
+      widows: 2;
+      
     }
     .card-columns .card {
       display: inline-flex;
