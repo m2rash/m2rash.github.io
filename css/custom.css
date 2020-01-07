@@ -93,3 +93,19 @@ background-color: transparent;
   }
 
 
+
+
+
+
+
+.opening-table{
+  max-width: 540px;
+}
+
+.icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
