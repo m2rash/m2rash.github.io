@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../../css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/Carousel.css">
 
     <title>LunchFinder</title>
   </head>
@@ -48,85 +49,56 @@
                 </form>-->
             </div>
             </nav>
+ 
 
 
-
-
-          <!--
-    ####################################################
-    C A R O U S E L
-    ####################################################
-    -->
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-              <div>
-                   <picture>
-                    <source srcset="https://dummyimage.com/2000x500/007aeb/4196e5" media="(min-width: 1400px)">
-                    <source srcset="https://dummyimage.com/1400x500/#007aeb/4196e5" media="(min-width: 769px)">
-                     <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
-                    <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-                  </picture>
-              </div>
-          </div>
-          
-          
-
-          <div class="carousel-item">
-            <div>
-              <picture>
-               <source srcset="https://dummyimage.com/2000x500/007aeb/4196e5" media="(min-width: 1400px)">
-               <source srcset="https://dummyimage.com/1400x500/#007aeb/4196e5" media="(min-width: 769px)">
-                <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
-               <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-             </picture>
-         </div>
-          </div>
-          
-          
-
-          <div class="carousel-item">
-            <div>
-              <picture>
-               <source srcset="https://dummyimage.com/2000x500/007aeb/4196e5" media="(min-width: 1400px)">
-               <source srcset="https://dummyimage.com/1400x500/#007aeb/4196e5" media="(min-width: 769px)">
-                <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
-               <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-             </picture>
-         </div>
-          </div>   
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-caption">
+      <h1>Oxford Ost</h1>
+      <br>
+      <button onclick="open_OxOst_extern()" type="button" class="btn btn-success">Open Website</button>                            
     </div>
-    
-    
-    <!-- carousel-buttons -->
-      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="OxOstCarousel1"></div>
+      <div class="carousel-item" id="OxOstCarousel2"></div>
+    </div>
+
+
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 
 
-  <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
 
 
 
-  
 
 
 
 
-      <script src="js/Websites.js"> </script>
+
+
+
+
+
+
+
+
+
+
+
+      <script src="../../../js/Websites.js"> </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -7,9 +7,14 @@ function open_OxOst_location()
     {
         location.href = "LocationSites/Oxfords/OxfordOst/OxOst.html";
     }
-
+    
     function open_Mensa_site()
     {
         location.href = "Mensa.html";
     }
-
+    
+    
+    function open_OxOst_extern()
+    {
+        location.href = "http://www.oxford-ost.de/";
+    }
