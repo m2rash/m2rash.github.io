@@ -24,34 +24,51 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Karte des nächsten Lokals</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Oxfords
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <button class="dropdown-item" onclick="open_OxOst_site()">Oxford Ost</button>
+                    <button class="dropdown-item" onclick="open_OxCafe_site()">Oxford Cafe</button>
+                    <button class="dropdown-item" onclick="open_OxCharles_site()">Charles Oxford</button>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item" onclick="open_OxPub_site()">Oxford Pub</button>
+                  </div>
                 </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Mensen
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <button class="dropdown-item" onclick="open_MensaAdenauer_site()">Mensa (Adenauer)</button>
+                    <button class="dropdown-item" onclick="open_MensaMoltke_site()">Mensa (Moltke)</button>
+                  </div>
+                </li>
+              </ul>
+              
+
+
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Website der Lokale
+                    Filter
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="http://www.oxford-ost.de/?lang=de">Oxford Ost</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <button class="dropdown-item" onclick="">Only Payable with Student-Card</button>
+                    <button class="dropdown-item" onclick="">Only Oxfords</button>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                </ul>
-                <!--<form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>-->
+                  </li>
+              </ul>   
             </div>
-            </nav>
+      </nav>
 
 
 
