@@ -91,6 +91,24 @@ function loadInfoCardDeck() {
 
 }
 
+        function open_Phone()
+            {
+                window.location.href = "tel:" + data.phoneNumber;
+            }
+
+        function open_Mail()
+            {
+                window.location.href = "mailto:" + data.mail;
+            }
+
+        function open_Map()
+            {
+                window.location.href = data.map;
+            } 
+
+
+
+            
 /*TODO PDF laden*/
 
 
