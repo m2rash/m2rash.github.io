@@ -5,33 +5,33 @@ var data = {
 
         "_____________Carousel________________": "",
 
-        "LocationName": "Oxford Cafe",
-        "LocationWebsiteExtern" : "http://www.oxford-cafe.de/",
-        "Carousel_images" : ["OxCafeCarousel1", "OxCafeCarousel2" ],
+        "LocationName": "Oxford Ost",
+        "LocationWebsiteExtern" : "http://www.oxford-ost.de/",
+        "Carousel_images" : ["OxOstCarousel1", "OxOstCarousel2" ],
 
 
 
         "_____________Opening-Hours________________": "",
 
-        "Monday": "11:00 - 02:00",
-        "Tuesday": "11:00 - 02:00",
-        "Wednesday": "11:00 - 02:00",
-        "Thursday": "11:00 - 02:00",
-        "Friday": "11:00 - 02:00",
-        "Saturday": "11:00 - 02:00",
-        "Sunday": "12:00 - 02:00",
+        "Monday": "11:30 - 00:00",
+        "Tuesday": "11:30 - 00:00",
+        "Wednesday": "11:30 - 00:00",
+        "Thursday": "11:30 - 00:00",
+        "Friday": "11:30 - 02:00",
+        "Saturday": "11:30 - 02:00",
+        "Sunday": "11:30 - 00:00",
 
 
         "_____________Info-Card-Deck________________": "",
 
-        "phoneNumber": "+4972135482250",
-        "mail": "reservierung@oxford-cafe.de",
-        "map": "https://www.google.de/maps/place/Oxford+Caf%C3%A9/@49.0079976,8.4078214,16.5z/data=!4m5!3m4!1s0x0:0x1b53c0cf7d960e4f!8m2!3d49.0091089!4d8.4117535",
-        "adress": "Kaiserstraße 57  </br> 76131 Karlsruhe </br> Germany</p>",
+        "phoneNumber": "+4972166384455",
+        "mail": "reservierung@oxford-ost.de",
+        "map": "https://www.google.com/maps/place/Oxford+OST/@49.0093355,8.4239207,15z/data=!4m5!3m4!1s0x0:0x9b3b4995f5ef0d72!8m2!3d49.0093355!4d8.4239207",
+        "adress": "Gerwigstraße 2  </br> 76131 Karlsruhe </br> Deutschland</p>",
 
 
         "_____________Menu________________": "",
-        "PDF_Link": "https://cdn.website.dish.co/media/fc/25/1853788/Cafe-Oxford-Cafe-6-12-01.pdf",
+        "PDF_Link": "https://cdn.website.dish.co/media/c1/ab/1853790/Oxford-OST-Ost-6-12-01.pdf",
         };
 
 function loadData() {
@@ -107,13 +107,7 @@ function loadInfoCardDeck() {
             } 
 
 
-
-            
 /*TODO PDF laden*/
-
-
-
-
 
 
 

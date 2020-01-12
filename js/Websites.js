@@ -4,10 +4,10 @@
 
 function open_MensaAdenauer_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordOst/Mensa(Adenauer).html";
+    location.href = "LocationSites/Canteens/KIT_Mensa/Mensa(Adenauer).html";
 }
 
-function open_MensaAdenauer_extern()
+/*function open_MensaAdenauer_extern()
     {
         location.href = "https://www.sw-ka.de/de/essen/";
     }
@@ -26,10 +26,10 @@ function open_MensaAdenauer_extern()
 
 function open_MensaMoltke_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordOst/Mensa(Moltke).html";
+    location.href = "LocationSites/Canteens/Moltke_Mensa/Mensa(Moltke).html";
 }
 
-function open_MensaMoltke_extern()
+/*function open_MensaMoltke_extern()
     {
         location.href = "https://www.sw-ka.de/de/essen/";
     }
@@ -56,7 +56,7 @@ function open_OxOst_site()
     location.href = "LocationSites/Oxfords/OxfordOst/OxOst.html";
 }
 
-function open_OxOst_extern()
+/*function open_OxOst_extern()
     {
         location.href = "http://www.oxford-ost.de/";
     }
@@ -64,7 +64,7 @@ function open_OxOst_extern()
 
 /*Buttons*/    
 
-function open_OxOst_Phone()
+/*function open_OxOst_Phone()
     {
         window.location.href = "tel:+4972166384455";
     }
@@ -91,7 +91,7 @@ function open_OxCafe_site()
     location.href = "LocationSites/Oxfords/OxfordCafe/OxCafe.html";
 }
 
-function open_OxCafe_extern()
+/*function open_OxCafe_extern()
     {
         location.href = "http://www.oxford-cafe.de/";
     }
@@ -99,7 +99,7 @@ function open_OxCafe_extern()
 
 /*Buttons*/    
 
-function open_OxCafe_Phone()
+/*function open_OxCafe_Phone()
     {
         window.location.href = "tel:+4972135482250";
     }
@@ -123,10 +123,10 @@ function open_OxCafe_Map()
 
 function open_OxPub_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordOst/OxPub.html";
+    location.href = "LocationSites/Oxfords/OxfordPub/OxPub.html";
 }
 
-function open_OxPub_extern()
+/*function open_OxPub_extern()
     {
         location.href = "https://www.oxfordpub.de/";
     }
@@ -134,7 +134,7 @@ function open_OxPub_extern()
 
 /*Buttons*/    
 
-function open_OxPub_Phone()
+/*function open_OxPub_Phone()
     {
         window.location.href = "tel:072114596420";
     }
@@ -158,10 +158,10 @@ function open_OxPub_Map()
 
 function open_OxCharles_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordOst/OxCharles.html";
+    location.href = "LocationSites/Oxfords/OxfordCharles/OxCharles.html";
 }
 
-function open_OxCharles_extern()
+/*function open_OxCharles_extern()
     {
         location.href = "http://www.charles-oxford.de/";
     }
@@ -169,7 +169,7 @@ function open_OxCharles_extern()
 
 /*Buttons*/    
 
-function open_OxCharles_Phone()
+/*function open_OxCharles_Phone()
     {
         window.location.href = "tel:+4972192127550";
     }

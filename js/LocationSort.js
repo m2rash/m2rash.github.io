@@ -12,7 +12,6 @@
     
     function init() {
       getLocation();
-      //sortList();
     }
     
     
