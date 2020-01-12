@@ -88,7 +88,7 @@ function open_OxOst_Map()
 
 function open_OxCafe_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordOst/OxCafe.html";
+    location.href = "LocationSites/Oxfords/OxfordCafe/OxCafe.html";
 }
 
 function open_OxCafe_extern()
