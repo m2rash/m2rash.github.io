@@ -116,15 +116,20 @@ background-color: transparent;
   margin-bottom: 25px;
 }
 
-/*TODO Menu-Pic einbinden*/
-#Menu-Pic {
-  background-image: url("../images/Menu_.jpg");
-  height: 40vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+#MenuTitle {
+  font-size: 3rem;
 }
+@media screen and (min-width: 576px) {
+  #MenuTitle {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #MenuTitle {
+    font-size: 5rem;
+  }
+}
+
 .embed-responsive {
   position: relative;
   display: block;

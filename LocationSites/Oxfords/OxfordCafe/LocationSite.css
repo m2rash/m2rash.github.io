@@ -4,8 +4,6 @@
    }
 
 
-/* Oxford Ost */
-
 #OxCafeCarousel1 {
   background-image: url("images/Placeholder.jpg");
   height: 50vh;
@@ -22,3 +20,15 @@
   background-position: 50% 50%;
   background-size: cover;
  }
+
+
+
+
+#Menu-Pic {
+  background-image: url("../../../images/Menu.jpg");
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
