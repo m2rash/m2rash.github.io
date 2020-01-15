@@ -17,9 +17,33 @@
     
     function getLocation() {
       if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(calcDistances);
+        navigator.geolocation.getCurrentPosition(calcDistances, showPosError);
       } else { 
-        dis.innerHTML = "Geolocation is not supported by this browser.";
+        document.getElementById("warningSpace").innerHTML =  '<div class="alert alert-danger alert-dismissible fade show">' +
+                                                                '<strong>Warning!</strong> Geolocation is not supported by this browser.' +
+                                                                '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                                                              '</div>'
+      }
+    }
+
+    function showPosError(error) {
+      if (error.code == error.PERMISSION_DENIED) {
+        document.getElementById("warningSpace").innerHTML =  '<div class="alert alert-warning alert-dismissible fade show">' +
+                                                                '<strong>Warning!</strong> In order to see the distances, the location must be released.' +
+                                                                '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                                                              '</div>'
+      }
+      else if (error.code == error.TIMEOUT) {
+        document.getElementById("warningSpace").innerHTML =  '<div class="alert alert-warning alert-dismissible fade show">' +
+                                                                '<strong>Warning!</strong> Geolocation Timeout.' +
+                                                                '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                                                              '</div>'
+      }
+      else if (error.code == error.UNKNOWN_ERROR) {
+        document.getElementById("warningSpace").innerHTML =  '<div class="alert alert-warning alert-dismissible fade show">' +
+                                                                '<strong>Warning!</strong> UNKNOWN_ERROR.' +
+                                                                '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                                                              '</div>'
       }
     }
 
@@ -30,34 +54,34 @@
 
 
 
-  //This function takes in latitude and longitude of two location and returns the distance between them as the crow flies (in km)
-  function calcDistances(position) {
-    var aktLat = position.coords.latitude;
-    var aktLon = position.coords.longitude;
-    var disForCalc = [];
+    //This function takes in latitude and longitude of two location and returns the distance between them as the crow flies (in km)
+    function calcDistances(position) {
+      var aktLat = position.coords.latitude;
+      var aktLon = position.coords.longitude;
+      var disForCalc = [];
 
-    for (i = 0; i < distances.length; i++) {
-      var R = 6371; // km
-      var dLat = toRad(positions[2*i]-aktLat);
-      var dLon = toRad(positions[2*i + 1]-aktLon);
-      var lat1 = toRad(aktLat);
-      var lat2 = toRad(positions[2*i]);
-      
-      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-      Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
-      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-      var d = R * c;
-      
-      disForCalc.push(d);
-      distances[i].innerHTML = d.toFixed(2) + " km";
+      for (i = 0; i < distances.length; i++) {
+        var R = 6371; // km
+        var dLat = toRad(positions[2*i]-aktLat);
+        var dLon = toRad(positions[2*i + 1]-aktLon);
+        var lat1 = toRad(aktLat);
+        var lat2 = toRad(positions[2*i]);
+        
+        var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+        var d = R * c;
+        
+        disForCalc.push(d);
+        distances[i].innerHTML = d.toFixed(2) + " km";
+      }
+
+      sortList(disForCalc)
     }
-
-    sortList(disForCalc)
-  }
-    // Converts numeric degrees to radians
-  function toRad(Value) {
-      return Value * Math.PI / 180;
-  }
+      // Converts numeric degrees to radians
+    function toRad(Value) {
+        return Value * Math.PI / 180;
+    }
 
 
 
