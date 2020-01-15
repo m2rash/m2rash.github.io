@@ -102,6 +102,12 @@ background-color: transparent;
 /* Background pattern from Toptal Subtle Patterns */
 .Menu-Container{
   background-image: url(../images/infoBackgroundDark.png);
+  padding-bottom: 4rem;
+}
+@media screen and (max-width: 350px) {
+  .Menu-Container {
+    padding-bottom: 5rem;
+  }
 }
 
 
