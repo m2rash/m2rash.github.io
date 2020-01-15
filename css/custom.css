@@ -82,19 +82,29 @@ background-color: transparent;
 
   .distanceColor {
     color: #DD2C00 !important;
+    color: rgb(221, 0, 0) !important;
   }
 
   .bg-OxFord {
     background-color: #03A9F4 !important;
+    background-color: rgb(153, 119, 24) !important;
+    background-color: #8D6E63 !important;
+
   }
   
   .bg-Mensa {
     background-color: #4CAF50 !important;
+    background-color: rgb(62, 109, 170) !important;
+    background-color: #0288D1 !important;
   }
 
 
 
 
+/* Background pattern from Toptal Subtle Patterns */
+#indexBody{
+  background-image: url(../images/infobackground.png);
+}
 /* Background pattern from Toptal Subtle Patterns */
 .Info-Container{
   background-image: url(../images/infobackground.png);
