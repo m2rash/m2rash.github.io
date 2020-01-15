@@ -4,7 +4,7 @@
 
 function open_MensaAdenauer_site()
 {
-    location.href = "LocationSites/Canteens/KIT_Mensa/Mensa(Adenauer).html";
+    location.href = "LocationSites/Canteens/KIT_Mensa/Overview.html";
 }
 
 /*function open_MensaAdenauer_extern()
@@ -26,7 +26,7 @@ function open_MensaAdenauer_site()
 
 function open_MensaMoltke_site()
 {
-    location.href = "LocationSites/Canteens/Moltke_Mensa/Mensa(Moltke).html";
+    location.href = "LocationSites/Canteens/Moltke_Mensa/Overview.html";
 }
 
 /*function open_MensaMoltke_extern()
@@ -53,7 +53,7 @@ function open_MensaMoltke_site()
 
 function open_OxOst_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordOst/OxOst.html";
+    location.href = "LocationSites/Oxfords/OxfordOst/Overview.html";
 }
 
 /*function open_OxOst_extern()
@@ -88,7 +88,7 @@ function open_OxOst_Map()
 
 function open_OxCafe_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordCafe/OxCafe.html";
+    location.href = "LocationSites/Oxfords/OxfordCafe/Overview.html";
 }
 
 /*function open_OxCafe_extern()
@@ -123,7 +123,7 @@ function open_OxCafe_Map()
 
 function open_OxPub_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordPub/OxPub.html";
+    location.href = "LocationSites/Oxfords/OxfordPub/Overview.html";
 }
 
 /*function open_OxPub_extern()
@@ -158,7 +158,7 @@ function open_OxPub_Map()
 
 function open_OxCharles_site()
 {
-    location.href = "LocationSites/Oxfords/OxfordCharles/OxCharles.html";
+    location.href = "LocationSites/Oxfords/OxfordCharles/Overview.html";
 }
 
 /*function open_OxCharles_extern()
