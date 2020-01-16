@@ -9,7 +9,6 @@
                       49.0103096, 8.3955915];
 
     
-    
     function init() {
       getLocation();
     }
@@ -23,6 +22,7 @@
                                                                 '<strong>Warning!</strong> Geolocation is not supported by this browser.' +
                                                                 '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                                                               '</div>'
+        
       }
     }
 
@@ -123,5 +123,6 @@
           switching = true;
         }
       }
+      initSortLocationBySize();
       scrollToTop();
     }
