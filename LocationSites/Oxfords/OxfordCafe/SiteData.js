@@ -3,7 +3,7 @@ function init() {
 }
 var data = {
 
-        "_____________Carousel________________": "",
+        /*_____________Carousel________________*/
 
         "LocationName": "Oxford Cafe",
         "LocationWebsiteExtern" : "http://www.oxford-cafe.de/",
@@ -11,7 +11,7 @@ var data = {
 
 
 
-        "_____________Opening-Hours________________": "",
+        /*_____________Opening-Hours________________*/
 
         "Monday": "11:00 - 02:00",
         "Tuesday": "11:00 - 02:00",
@@ -22,7 +22,7 @@ var data = {
         "Sunday": "12:00 - 02:00",
 
 
-        "_____________Info-Card-Deck________________": "",
+        /*_____________Info-Card-Deck________________*/
 
         "phoneNumber": "+4972135482250",
         "mail": "reservierung@oxford-cafe.de",
@@ -30,14 +30,15 @@ var data = {
         "adress": "Kaiserstraße 57  </br> 76131 Karlsruhe </br> Germany</p>",
 
 
-        "_____________Menu________________": "",
-        "PDF_Link": "https://cdn.website.dish.co/media/fc/25/1853788/Cafe-Oxford-Cafe-6-12-01.pdf",
+        /*_____________Menu________________*/
+        "PDF_Link": "https://cdn.website.dish.co/media/c5/ea/1876406/Cafe-Oxford-Cafe-13-19-01.pdf",
         };
 
 function loadData() {
     loadCarousel();
     loadOpeningHours();
     loadInfoCardDeck();
+    loadPDF();
 }
 
 
@@ -108,12 +109,11 @@ function loadInfoCardDeck() {
 
 
 
-            
-/*TODO PDF laden*/
-
-
-
-
+function loadPDF() {
+    document.getElementById("PDF-Container").innerHTML = '<div class="embed-responsive" style="padding-bottom:100%">' + 
+                                                        '<object data="' + data.PDF_Link + '" type="application/pdf" width="100%" height="100%"></object>' + 
+                                                        '</div>'
+}
 
 
 

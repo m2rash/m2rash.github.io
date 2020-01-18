@@ -1,0 +1,53 @@
+
+
+#MensaAdenauerImage {
+    background-image: url("LocationSites/Canteens/KIT_Mensa/images/Placeholder.jpg");
+    height: 13rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#MensaMoltkeImage {
+    background-image: url("LocationSites/Canteens/Moltke_Mensa/images/Placeholder.jpg");
+    height: 13rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+
+#OxOstImage {
+    background-image: url("LocationSites/Oxfords/OxfordOst/images/Placeholder.jpg");
+    height: 13rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#OxCafeImage {
+    background-image: url("LocationSites/Oxfords/OxfordCafe/images/Placeholder.jpg");
+    height: 13rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#OxPubImage {
+    background-image: url("LocationSites/Oxfords/OxfordPub/images/Placeholder.jpg");
+    height: 13rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#OxCharlesImage {
+    background-image: url("LocationSites/Oxfords/OxfordCharles/images/Placeholder.jpg");
+    height: 13rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}

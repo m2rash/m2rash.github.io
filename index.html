@@ -9,6 +9,7 @@
     -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="previewImages.css">
 
     <title>LunchFinder</title>
     <link rel = "icon" type = "image/png" href = "https://img.icons8.com/material-outlined/24/000000/cutlery.png">
@@ -82,7 +83,7 @@
 
 
           <li class="card bg-Mensa">
-            <img class="card-img-top" src="LocationSites/Canteens/KIT_Mensa/images/Placeholder.jpg" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseMensaAdenauer">
+            <a class="card-img-top" id='MensaAdenauerImage' alt="Card image cap" role="button" data-toggle="collapse" href="#collapseMensaAdenauer">
             <a class="card-body" role="button" data-toggle="collapse" href="#collapseMensaAdenauer">
               <h5 class="card-title">Mensa (Adenauer)<i class="float-right distanceColor" id="MensaAdenauerDis"></i></h5> 
             </a>
@@ -101,14 +102,15 @@
                   mit Joghurt - Ingwerdip
               </p>
                            
-              <button onclick="open_Mensa_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+              <button onclick="open_MensaAdenauer_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+              <button onclick="open_MensaAdenauer_Map()" type="button" class="btn btn-success btn-lg btn-block mt-2">Show on Maps</button>
             </a> 
           </li>
           
           
           
           <li class="card bg-Mensa">
-            <img class="card-img-top" src="LocationSites/Canteens/Moltke_Mensa/images/Placeholder.jpg" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseMensaMoltke">
+            <a class="card-img-top" id='MensaMoltkeImage' alt="Card image cap" role="button" data-toggle="collapse" href="#collapseMensaMoltke">
             <a class="card-body" role="button" data-toggle="collapse" href="#collapseMensaMoltke">
               <h5 class="card-title">Mensa (Moltkestr.)<i class="float-right distanceColor" id="MensaMoltkeDis"></i></h5> 
             </a>
@@ -126,7 +128,9 @@
                 </b>
                   mit Joghurt - Ingwerdip
               </p>             
-              <button onclick="open_Mensa_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+              <button onclick="open_MensaMoltke_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+              <button onclick="open_MensaMoltke_Map()" type="button" class="btn btn-success btn-lg btn-block mt-2">Show on Maps</button>
+
             </a> 
           </li>
 
@@ -136,7 +140,7 @@
 
 
           <li class="card bg-OxFord">
-            <img class="card-img-top" src="LocationSites/Oxfords/OxfordOst/images/Placeholder.jpg" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxOst">
+            <a class="card-img-top" id='OxOstImage' alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxOst">
             <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxOst">
               <h5 class="card-title">Oxford Ost <i class="float-right distanceColor" id="OxOstDis"></i></h5> 
             </a>
@@ -171,7 +175,7 @@
 
 
           <li class="card  bg-OxFord">
-            <img class="card-img-top" src="LocationSites/Oxfords/OxfordCafe/images/Placeholder.jpg" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxCafe">
+            <a class="card-img-top" id='OxCafeImage' alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxCafe">
             <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxCafe">
               <h5 class="card-title">Oxford Cafe <i class="float-right distanceColor" id="OxCafeDis"></i></h5> 
             </a>
@@ -200,11 +204,12 @@
 
               </p>              
               <button onclick="open_OxCafe_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+              <button onclick="open_OxCafe_Map()" type="button" class="btn btn-success btn-lg btn-block mt-2">Show on Maps</button>
             </a> 
           </li>
 
           <li class="card bg-OxFord">
-            <img class="card-img-top" src="LocationSites/Oxfords/OxfordPub/images/Placeholder.jpg" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxPub">
+            <a class="card-img-top" id='OxPubImage' alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxPub">
             <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxPub">
               <h5 class="card-title">Oxford Pub <i class="float-right distanceColor" id="OxPubDis"></i></h5> 
             </a>
@@ -232,13 +237,15 @@
                     Rucola & Speck dazu Pommes
   
                 </p>              
-                <button onclick="open_OxOst_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+                <button onclick="open_OxPub_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+                <button onclick="open_OxPub_Map()" type="button" class="btn btn-success btn-lg btn-block mt-2">Show on Maps</button>
+
               </a> 
           </li>
 
 
           <li class="card bg-OxFord">
-            <img class="card-img-top" src="LocationSites/Oxfords/OxfordCharles/images/Placeholder.jpg" alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxCharles">
+            <a class="card-img-top" id='OxCharlesImage' alt="Card image cap" role="button" data-toggle="collapse" href="#collapseOxCharles">
             <a class="card-body" role="button" data-toggle="collapse" href="#collapseOxCharles">
               <h5 class="card-title">Charles Oxford <i class="float-right distanceColor" id="OxCharlesDis"></i></h5> 
             </a>
@@ -267,7 +274,8 @@
                   Rucola & Speck dazu Pommes
 
               </p>              
-              <button onclick="open_OxOst_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+              <button onclick="open_OxCharles_site()" type="button" class="btn btn-dark btn-lg btn-block mt-4">Show Menu</button>
+              <button onclick="open_OxCharles_Map()" type="button" class="btn btn-success btn-lg btn-block mt-2">Show on Maps</button>
             </a> 
           </li>
 
@@ -291,7 +299,7 @@
 
     <!-- Optional JavaScript -->
     <script src="js/LocationSort.js"> </script>
-    <script src="js/Websites.js"> </script>
+    <script src="indexLocationButtonAndNavbarFunctions.js"> </script>
     <script src="js/SortLocationListByScreenSize.js"> </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
