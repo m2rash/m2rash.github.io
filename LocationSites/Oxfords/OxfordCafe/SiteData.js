@@ -31,13 +31,14 @@ var data = {
 
 
         /*_____________Menu________________*/
-        "PDF_Link": "https://cdn.website.dish.co/media/fc/25/1853788/Cafe-Oxford-Cafe-6-12-01.pdf",
+        "PDF_Link": "https://cdn.website.dish.co/media/c5/ea/1876406/Cafe-Oxford-Cafe-13-19-01.pdf",
         };
 
 function loadData() {
     loadCarousel();
     loadOpeningHours();
     loadInfoCardDeck();
+    loadPDF();
 }
 
 
@@ -108,12 +109,11 @@ function loadInfoCardDeck() {
 
 
 
-            
-/*TODO PDF laden*/
-
-
-
-
+function loadPDF() {
+    document.getElementById("PDF-Container").innerHTML = '<div class="embed-responsive" style="padding-bottom:100%">' + 
+                                                        '<object data="' + data.PDF_Link + '" type="application/pdf" width="100%" height="100%"></object>' + 
+                                                        '</div>'
+}
 
 
 
