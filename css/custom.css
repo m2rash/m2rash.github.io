@@ -199,13 +199,3 @@ body {
 .footer a:hover {
   color: rgb(170, 170, 170);
 }
-
-
-#OxOstCarousel1 {
-  background-image: url("../LocationSites/Oxfords/OxfordCharles/images/Placeholder.jpg");
-  height: 13rem;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
- }
