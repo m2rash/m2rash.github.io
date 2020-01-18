@@ -1,0 +1,34 @@
+.carousel-caption {
+    top: auto;
+    bottom: 30%;
+   }
+
+
+#OxCharlesCarousel1 {
+  background-image: url("images/Placeholder.jpg");
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+ }
+#OxCharlesCarousel2 {
+  background-image: url("images/Placeholder.jpg");
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+ }
+
+
+
+
+#Menu-Pic {
+  background-image: url("../../../images/Menu.jpg");
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
