@@ -3,7 +3,7 @@ function init() {
 }
 var data = {
 
-        "_____________Carousel________________": "",
+        /*_____________Carousel________________*/
 
         "LocationName": "Oxford Ost",
         "LocationWebsiteExtern" : "http://www.oxford-ost.de/",
@@ -11,7 +11,7 @@ var data = {
 
 
 
-        "_____________Opening-Hours________________": "",
+        /*_____________Opening-Hours________________*/
 
         "Monday": "11:30 - 00:00",
         "Tuesday": "11:30 - 00:00",
@@ -22,7 +22,7 @@ var data = {
         "Sunday": "11:30 - 00:00",
 
 
-        "_____________Info-Card-Deck________________": "",
+        /*_____________Info-Card-Deck________________*/
 
         "phoneNumber": "+4972166384455",
         "mail": "reservierung@oxford-ost.de",
@@ -30,7 +30,7 @@ var data = {
         "adress": "Gerwigstraße 2  </br> 76131 Karlsruhe </br> Deutschland</p>",
 
 
-        "_____________Menu________________": "",
+        /*_____________Menu________________*/
         "PDF_Link": "https://cdn.website.dish.co/media/c1/ab/1853790/Oxford-OST-Ost-6-12-01.pdf",
         };
 

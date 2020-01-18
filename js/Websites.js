@@ -6,17 +6,11 @@ function open_MensaAdenauer_site()
 {
     location.href = "LocationSites/Canteens/KIT_Mensa/Overview.html";
 }
-
-/*function open_MensaAdenauer_extern()
+function open_MensaAdenauer_Map()
     {
-        location.href = "https://www.sw-ka.de/de/essen/";
+        location.href = "https://www.google.de/maps/place/Mensa+am+Adenauerring/@49.0116147,8.4133176,17.49z/data=!4m8!1m2!2m1!1sMensa!3m4!1s0x0:0x2d93d5ea5b39cdbe!8m2!3d49.0118745!4d8.416898";
+        
     }
-
-
-/*Buttons*/    
-
-
-
 
 
 
@@ -28,16 +22,11 @@ function open_MensaMoltke_site()
 {
     location.href = "LocationSites/Canteens/Moltke_Mensa/Overview.html";
 }
-
-/*function open_MensaMoltke_extern()
+function open_MensaMoltke_Map()
     {
-        location.href = "https://www.sw-ka.de/de/essen/";
+        location.href = "https://www.google.de/maps/place/Mensa+Moltke/@49.0102615,8.4005322,15z/data=!4m8!1m2!2m1!1sMensa!3m4!1s0x0:0xe9814a41e2609bd6!8m2!3d49.0147403!4d8.3940402";
+        
     }
-
-
-/*Buttons*/    
-
-
 
 
 
@@ -56,27 +45,10 @@ function open_OxOst_site()
     location.href = "LocationSites/Oxfords/OxfordOst/Overview.html";
 }
 
-/*function open_OxOst_extern()
-    {
-        location.href = "http://www.oxford-ost.de/";
-    }
-
-
-/*Buttons*/    
-
-/*function open_OxOst_Phone()
-    {
-        window.location.href = "tel:+4972166384455";
-    }
-
-function open_OxOst_Mail()
-    {
-        window.location.href = "mailto:reservierung@oxford-ost.de";
-    }
-
 function open_OxOst_Map()
     {
         location.href = "https://www.google.com/maps/place/Oxford+OST/@49.0093355,8.4239207,15z/data=!4m5!3m4!1s0x0:0x9b3b4995f5ef0d72!8m2!3d49.0093355!4d8.4239207";
+        
     } 
 
 
@@ -90,24 +62,6 @@ function open_OxCafe_site()
 {
     location.href = "LocationSites/Oxfords/OxfordCafe/Overview.html";
 }
-
-/*function open_OxCafe_extern()
-    {
-        location.href = "http://www.oxford-cafe.de/";
-    }
-
-
-/*Buttons*/    
-
-/*function open_OxCafe_Phone()
-    {
-        window.location.href = "tel:+4972135482250";
-    }
-
-function open_OxCafe_Mail()
-    {
-        window.location.href = "mailto:reservierung@oxford-cafe.de";
-    }
 
 function open_OxCafe_Map()
     {
@@ -126,24 +80,6 @@ function open_OxPub_site()
     location.href = "LocationSites/Oxfords/OxfordPub/Overview.html";
 }
 
-/*function open_OxPub_extern()
-    {
-        location.href = "https://www.oxfordpub.de/";
-    }
-
-
-/*Buttons*/    
-
-/*function open_OxPub_Phone()
-    {
-        window.location.href = "tel:072114596420";
-    }
-
-function open_OxPub_Mail()
-    {
-        window.location.href = "mailto:info@oxfordpub.de";
-    }
-
 function open_OxPub_Map()
     {
         location.href = "https://www.google.de/maps/place/Oxford+Pub+-+Bier+%26+Burger/@49.0087922,8.4110596,18.5z/data=!4m5!3m4!1s0x0:0x823aadf9ebe8bb1d!8m2!3d49.0086068!4d8.4129226";
@@ -160,24 +96,6 @@ function open_OxCharles_site()
 {
     location.href = "LocationSites/Oxfords/OxfordCharles/Overview.html";
 }
-
-/*function open_OxCharles_extern()
-    {
-        location.href = "http://www.charles-oxford.de/";
-    }
-
-
-/*Buttons*/    
-
-/*function open_OxCharles_Phone()
-    {
-        window.location.href = "tel:+4972192127550";
-    }
-
-function open_OxCharles_Mail()
-    {
-        window.location.href = "mailto:reservierung@charles-oxford.de";
-    }
 
 function open_OxCharles_Map()
     {
