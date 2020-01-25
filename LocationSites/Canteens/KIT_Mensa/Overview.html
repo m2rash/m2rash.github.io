@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#363a40" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../css/custom.css">
+    <link rel="stylesheet" type="text/css" href="LocationSite.css">
+
+    <title>LunchFinder</title>
+    <link rel = "icon" type = "image/png" href = "https://img.icons8.com/material-outlined/24/000000/cutlery.png">
+    <!-- For apple devices -->
+    <link rel = "apple-touch-icon" type = "image/png" href = "https://img.icons8.com/material-outlined/24/000000/cutlery.png"/>
+
+  </head>
+
+
+
+
+  <body onload="init()">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../../../index.html">LunchFinder</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Oxfords
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <button class="dropdown-item" onclick="open_OxOst_site()">Oxford Ost</button>
+              <button class="dropdown-item" onclick="open_OxCafe_site()">Oxford Cafe</button>
+              <button class="dropdown-item" onclick="open_OxCharles_site()">Charles Oxford</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item" onclick="open_OxPub_site()">Oxford Pub</button>
+            </div>
+          </li>
+          
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Canteens
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <button class="dropdown-item" onclick="open_MensaAdenauer_site()">Mensa (Adenauer)</button>
+              <button class="dropdown-item" onclick="open_MensaMoltke_site()">Mensa (Moltke)</button>
+            </div>
+          </li>
+        </ul>  
+      </div>
+</nav>
+ 
+
+
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-caption">
+      <h1 id="LocationName"></h1>
+      <br>
+      <button onclick="open_extern()" type="button" class="btn btn-success">Open Website</button>                            
+    </div>
+
+    <div class="carousel-inner" id="Carousel_images">
+    </div>
+
+
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="Info-Container" id="Linien">  
+    
+    <div class="container card-columns pt-4">
+
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Linie 1</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 2,60 €</div></h5>
+                    <p class="card-text">Mit Ketchup und so...</p>
+
+                <h5 class="card-title">Essen 2 (Veg(etarisch/gan)       <div class="float-right small"> 2,60 €</div></h5>
+                    <p class="card-text">Mit fancy veganem Stuff</p>
+
+                <hr>
+                <div>Extra Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Extra Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+        
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Linie 2</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 2,60 €</div></h5>
+                <p class="card-text">Mit Ketchup und so...</p>
+                
+                <hr>
+                <div>Extra Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Extra Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+        
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Linie 3</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 3,20 €</div></h5>
+                    <p class="card-text">Mit Ketchup und so...</p>
+
+                <h5 class="card-title">Essen 2 (Veg(etarisch/gan)       <div class="float-right small"> 2,40 €</div></h5>
+                    <p class="card-text">Mit fancy veganem Stuff</p>
+
+                <hr>
+                <div>Extra Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Extra Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+        
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Linie 4/5</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 3,80 €</div></h5>
+                    <p class="card-text">Mit Ketchup und so...</p>
+
+                <h5 class="card-title">Essen 2 (Veg(etarisch/gan)       <div class="float-right small"> 3,40 €</div></h5>
+                    <p class="card-text">Mit fancy veganem Stuff</p>
+
+                <hr>
+                <div>Pommes                                <div class="float-right small"> 2,60 €</div></div>
+                <div>Nudeln                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Suppe                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+        
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Linie 6</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Premium Essen 1 (Schlemmer)       <div class="float-right small"> 3,80 €</div></h5>
+                    <p class="card-text">Mit Premium-Ketchup und so...</p>
+
+                <h5 class="card-title">Vorspeisenteller       <div class="float-right small"> 3,40 €</div></h5>
+
+                <hr>
+                <div>WOk                                <div class="float-right small"> 0,88 €</div></div>
+                <div>BurgerBar                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>SalatBar                                  <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+    </div>
+  
+</div>
+
+
+
+<div class="carousel" id="PizzaDivider">
+    <div class="carousel-caption">
+      <h1 id="MenuTitle">[pizza/pasta]-werk</h1>                   
+    </div>
+</div>
+
+
+
+<div class="Info-Container" id="Linien">  
+    
+    <div class="container card-columns pt-4">
+
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Pizza</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 2,60 €</div></h5>
+                    <p class="card-text">Mit Ketchup und so...</p>
+
+                <h5 class="card-title">Essen 2 (Veg(etarisch/gan)       <div class="float-right small"> 2,60 €</div></h5>
+                    <p class="card-text">Mit fancy veganem Stuff</p>
+
+                <hr>
+                <div>Extra Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Extra Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+        
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Pasta</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 2,60 €</div></h5>
+                <p class="card-text">Mit Ketchup und so...</p>
+                
+                <hr>
+                <div>Extra Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Extra Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+        
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Salate und Vorspeisen</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 2,60 €</div></h5>
+                <p class="card-text">Mit Ketchup und so...</p>
+                
+                <hr>
+                <div>Extra Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Extra Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+        
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="carousel" id="CurryDivider">
+    <div class="carousel-caption">
+      <h1 id="MenuTitle">[koeri]werk</h1>                   
+    </div>
+</div>
+
+
+
+<div class="Info-Container" id="Linien">  
+    
+    <div class="container card-columns pt-4">
+
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Linie 1</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 2,60 €</div></h5>
+                    <p class="card-text">Mit Ketchup und so...</p>
+
+                <h5 class="card-title">Essen 2 (Veg(etarisch/gan)       <div class="float-right small"> 2,60 €</div></h5>
+                    <p class="card-text">Mit fancy veganem Stuff</p>
+
+                <hr>
+                <div>Extra Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Extra Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+        
+        
+        <div class="card bg-light mb-3">
+            <div class="card-header"> <h5>Linie 2</h5></div>
+            <div class="card-body">
+                <h5 class="card-title">Essen 1 (Fleisch)       <div class="float-right small"> 2,60 €</div></h5>
+                <p class="card-text">Mit Ketchup und so...</p>
+                
+                <hr>
+                <div>Extra Salat                                  <div class="float-right small"> 2,60 €</div></div>
+                <div>Extra Nachtisch                              <div class="float-right small"> 2,60 €</div></div>
+            </div>
+        </div>
+    
+        
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="footer bg-dark text-white">
+  <div class="container-fluid">
+      <div class="row">
+          <a class="col text-left small" href="../../../Datenschutzerklaerung.html">Datenschutzerklärung</a>
+          <div class="col text-right small align-self-end">©2020 LunchFinder-ka</div>
+      </div>
+  </div>
+</footer>
+      
+    <!-- Optional JavaScript -->
+    <script src="SiteData.js"> </script>
+    <script src="../canteensNavbarLinks.js"> </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

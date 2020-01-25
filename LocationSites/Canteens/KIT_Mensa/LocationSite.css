@@ -1,0 +1,109 @@
+.carousel-caption {
+    top: auto;
+    bottom: 30%;
+   }
+
+
+#OxCafeCarousel1 {
+  background-image: url("images/Placeholder.jpg");
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+ }
+#OxCafeCarousel2 {
+  background-image: url("images/Placeholder.jpg");
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+ }
+
+
+
+
+#PizzaDivider {
+  background-image: url("images/pizza2.jpg");
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#CurryDivider {
+  background-image: url("images/currywurst2.jpg");
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+
+
+
+.card-columns .card {
+  margin-bottom: 0.75rem;
+}
+
+
+@media screen and (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .card-columns .card {
+    display: inline-flex;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    /*next params has to be the half the number of cards*/
+    orphans: 1;
+    widows: 1;
+  }
+  .card-columns .card {
+    display: inline-flex;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+    orphans: 1;
+    widows: 1;
+    
+  }
+  .card-columns .card {
+    display: inline-flex;
+    width: 100%;
+  }
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
