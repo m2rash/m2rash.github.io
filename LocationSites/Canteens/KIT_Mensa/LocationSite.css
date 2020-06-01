@@ -4,7 +4,7 @@
    }
 
 
-#OxCafeCarousel1 {
+#Carousel1 {
   background-image: url("images/Placeholder.jpg");
   height: 50vh;
   width: 100%;
@@ -12,7 +12,7 @@
   background-position: 50% 50%;
   background-size: cover;
  }
-#OxCafeCarousel2 {
+#Carousel2 {
   background-image: url("images/Placeholder.jpg");
   height: 50vh;
   width: 100%;
