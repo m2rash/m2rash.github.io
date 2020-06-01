@@ -108,6 +108,7 @@ background-color: transparent;
 /* Background pattern from Toptal Subtle Patterns */
 .Info-Container{
   background-image: url(../images/infobackground.png);
+  padding-bottom: 1rem;
 }
 /* Background pattern from Toptal Subtle Patterns */
 .Menu-Container{
