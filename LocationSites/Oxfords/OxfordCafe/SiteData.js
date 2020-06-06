@@ -31,7 +31,7 @@ var data = {
 
 
         /*_____________Menu________________*/
-        "PDF_Link": "https://cdn.website.dish.co/media/c5/ea/1876406/Cafe-Oxford-Cafe-13-19-01.pdf",
+        "PDF_Link": "https://cdn.website.dish.co/media/f2/76/2098656/Cafe-Oxford-Cafe-Wochenkarte-Kopie-01.pdf",
         };
 
 function loadData() {

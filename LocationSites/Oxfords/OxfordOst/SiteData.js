@@ -31,7 +31,7 @@ var data = {
 
 
         /*_____________Menu________________*/
-        "PDF_Link": "https://cdn.website.dish.co/media/66/8e/1876408/Oxford-OST-Ost-13-19-01.pdf",
+        "PDF_Link": "https://cdn.website.dish.co/media/25/66/2403197/Oxford-OST-OST-FOOD.pdf",
         };
 
 function loadData() {
